@@ -1,5 +1,5 @@
 var sqlMap = {
-    projectSql: {
+    userSql: {
         // addnewProject: 'insert into project(id,WebName,Section,Source)values(?,?,?,?)',
  
         // updateItem: 'update project set WebName=?,Section=?,Source=? where id=?',
@@ -8,6 +8,8 @@ var sqlMap = {
         // getLimitItem: 'select * from project limit ?,?',
         // getCount: 'select count(*) from project',
 
+        
+        getAllUsers: 'select * from user',
         getNameListByRole: 'select name from user where role = ?',
         getTelByName: 'select tel from user where name = ?'
     }
